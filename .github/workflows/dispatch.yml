@@ -1,0 +1,13 @@
+name: Dispatch Workflow
+on:
+  repository_dispatch:
+    types: [my-event]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Run a script
+      run: echo "Event - ${{ github.event.client_payload.message }}"
