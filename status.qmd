@@ -1,0 +1,21 @@
+---
+title: "Status"
+format: gfm
+---
+
+```{python}
+#| echo: false
+#| output: asis
+import pandas as pd 
+
+df = pd.DataFrame({"col1": [-5, -2, 1, 4], "col2": [2, 3, -1, 4]})
+print(df.to_markdown(index=False))
+```
+
+
+```{python}
+#| echo: false
+#| output: asis
+import importlib.metadata
+print(f"_Generated with flowmapper, version {importlib.metadata.version('flowmapper')}._")
+```

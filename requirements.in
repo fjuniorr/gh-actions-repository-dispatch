@@ -1,0 +1,3 @@
+pandas[output-formatting]
+jupyter
+git+https://github.com/fjuniorr/flowmapper.git@main
